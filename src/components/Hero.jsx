@@ -6,13 +6,15 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import Logo from "../images/logo.svg";
+import LightLogo from "../images/mochi-mochi-hello-white-mochi-mochi.gif";
+import DarkLogo from "../images/mochi-mochi-hello-grey-cat-mochi-mochi.gif";
 import { Light, Dark } from "../config";
 // Components
 import { useErrorBoundary } from "react-error-boundary";
 import { Link } from "react-scroll";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import SocialLinks from "./SocialLinks";
+import { useTheme } from "styled-components";
 
 // #region styled-components
 const spin = keyframes`
@@ -67,7 +69,7 @@ const StyledHero = styled.header`
 
   @media (prefers-reduced-motion: no-preference) {
     .hero-img {
-      animation: ${spin} infinite 20s linear;
+      animation: ${spin} infinite 25s linear;
     }
   }
 
@@ -83,6 +85,7 @@ const propTypes = {
 
 const Hero = ({ name }) => {
   const { showBoundary } = useErrorBoundary();
+  const theme = useTheme();
 
   return (
     <StyledHero>
@@ -98,7 +101,7 @@ const Hero = ({ name }) => {
           </Col>
           <Col className="d-none d-md-block">
             <img
-              src={Logo}
+              src={theme.name === "light" ? LightLogo : DarkLogo}
               alt="React Logo"
               className="w-75 mx-auto hero-img"
             />

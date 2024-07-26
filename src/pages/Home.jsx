@@ -27,10 +27,8 @@ const Home = () => {
       <main>
         <AboutMe
           avatar_url={userData.avatar_url}
-          bio={
-            "Hello! I'm Zhi, a rising junior majoring in Computer Science at the University at Buffalo. I have a passion for software development, particularly in Full Stack. Through various projects and collaborations, I've developed a strong foundation in web development and database management. I'm eager to apply my skills in real-world settings and connect with like-minded professionals. Let's connect!"
-          }
-          moreInfo={""}
+          bio={userData.bio}
+          moreInfo={moreInfo}
         />
         <Skills />
         <Projects filteredProjects={filteredProjects} />

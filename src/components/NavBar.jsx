@@ -32,7 +32,7 @@ const navLinks = {
 // #region styled-components
 const StyledDiv = styled.div`
   .navbar {
-    border-bottom: 2px solid #FF7E5F;;
+    border-bottom: var(--border);
   }
 
   .spacer {

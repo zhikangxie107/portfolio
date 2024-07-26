@@ -54,7 +54,7 @@ const Projects = () => {
                 );
               })}
             </Row>
-            {projects.length > 3 && (
+            {/* {projects.length > 3 && (
               <Container className="text-center mt-5">
                 <Link to="/All-Projects">
                   <Button
@@ -67,7 +67,7 @@ const Projects = () => {
                   </Button>
                 </Link>
               </Container>
-            )}
+            )} */}
           </>
         )}
       </>

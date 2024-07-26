@@ -41,8 +41,8 @@ const StyledHero = styled.header`
     height: 100%;
     background: ${({ theme }) =>
       theme.name === "light"
-        ? "linear-gradient(135deg, #FF7E5F, #feb47b)" // Orange gradient
-        : "linear-gradient(135deg, #FF7E5F, #feb47b)"}; // Orange gradient
+        ? "linear-gradient(135deg, var(--bs-primary), var(--bs-light))"
+        : "linear-gradient(135deg, var(--bs-primary), var(--bs-dark))"};
     z-index: -2;
   }
 

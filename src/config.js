@@ -35,7 +35,7 @@ export { HeroDark as Dark };
   Add a second paragraph for the about me section.
 */
 export const moreInfo =
-  "I have a passion for software development, particularly in Full Stack. Through various projects and collaborations, I've developed a strong foundation in web development and database management. I'm eager to apply my skills in real-world settings and connect with like-minded professionals. Let’s connect!";
+  "A little about me, I enjoy cooking, baking, and going to the gym! I love working on new projects and helping people out. Feel free to message me!";
 
 /* Skills
  ************************************************************** 

@@ -32,6 +32,29 @@ import { footerTheme, navLogo } from "./config";
 // Util
 import { getStoredTheme, getPreferredTheme, setTheme } from "./utils";
 
+//firebase
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: "portfolio-38c97.firebaseapp.com",
+  projectId: "portfolio-38c97",
+  storageBucket: "portfolio-38c97.appspot.com",
+  messagingSenderId: "170821210443",
+  appId: "1:170821210443:web:e12cf6f355fe27418958ce",
+  measurementId: "G-0B2FRL8Y7F"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 // #region component
 const propTypes = {
   filteredProjects: PropTypes.arrayOf(PropTypes.string),

@@ -111,7 +111,7 @@ export const resume = "https://drive.google.com/file/d/1y1uP2-spCqU_sgpS1TGkS-j5
  ************************************************************** 
   List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
 */
-export const filteredProjects = ["roomies", "WeatherApp", "Social-Media-Web-Application"];
+export const filteredProjects = ["inventory-tracker","roomies", "WeatherApp", "Social-Media-Web-Application"];
 
 // Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
 export const projectCardImages = [
